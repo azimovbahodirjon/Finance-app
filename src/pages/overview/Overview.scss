@@ -1,0 +1,65 @@
+/* Overview Component Styles */
+
+.overview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #1e1e2f; // <-- same as Header
+  padding: 20px;
+}
+
+.overview__content {
+  text-align: center;
+  background-color: #2a2a40; // slightly lighter dark for contrast
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.overview__content:hover {
+  transform: translateY(-5px);
+}
+
+.overview h1 {
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.overview p {
+  font-size: 18px;
+  color: #cccccc;
+  margin-bottom: 30px;
+}
+
+.logout-btn {
+  padding: 12px 24px;
+  background-color: #ff5e57;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 180px;
+}
+
+.logout-btn:hover {
+  background-color: #ff3b2f;
+  transform: scale(1.05);
+}
+
+.logout-btn:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+.logout-btn:disabled:hover {
+  background-color: #666;
+}

@@ -54,15 +54,19 @@
 .login-form {
   display: flex;
   flex-direction: column;
-  //   align-items: center;
   gap: 32px;
   background-color: $white;
   padding: $spacing-400;
   border-radius: $spacing-150;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
   form {
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+  &:hover {
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
   }
 }
 
@@ -85,13 +89,18 @@
   color: $white;
   margin-top: 32px;
   cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  &:hover {
+    background-color: darken($grey-900, 5%);
+    transform: translateY(-2px);
+  }
 }
 
 @media (max-width: 1210px) {
   .login-left {
     display: none !important;
     opacity: 50%;
-    // visibility: hidden;
   }
   .login-page {
     height: 100%;

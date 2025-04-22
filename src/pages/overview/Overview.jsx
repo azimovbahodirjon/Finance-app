@@ -4,8 +4,8 @@ import "./Overview.scss";
 function Overview() {
   const { signout, isPending } = useLogout();
   return (
-    <div>
-      <button onClick={() => signout()}>
+    <div className="overview">
+      <button className="logout-btn" onClick={() => signout()}>
         {isPending ? "Loading..." : "Logout"}
       </button>
     </div>
